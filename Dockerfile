@@ -17,4 +17,5 @@ COPY --from=0 /node_modules /node_modules
 
 RUN ln -s /node_modules/.bin/* /usr/local/bin
 
-ENTRYPOINT particle
+ENTRYPOINT ["particle"]
+CMD []
