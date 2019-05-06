@@ -11,7 +11,7 @@ RUN npm config set user root \
 FROM node:8-jessie-slim
 
 RUN apt update \
- && apt install -y dfu-util libusb-1.0-0-dev \
+ && apt install -y nano dfu-util libusb-1.0-0-dev \
  && rm -rf /var/lib/apt/lists \
  && npm config set user root
 
