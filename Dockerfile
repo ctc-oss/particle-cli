@@ -15,6 +15,9 @@ RUN apt update \
  && rm -rf /var/lib/apt/lists \
  && npm config set user root
 
+WORKDIR /root
+
+ADD https://s3.amazonaws.com/spark-website/cloud_public.der .
 COPY --from=0 /usr/local /usr/local
 
 RUN ln -s /node_modules/.bin/* /usr/local/bin
