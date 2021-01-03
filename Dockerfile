@@ -4,7 +4,7 @@ RUN apt update \
  && apt install -y libusb-1.0-0-dev
 
 RUN npm config set user root \
- && npm install -g particle-cli
+ && npm install -g particle-cli@1.49.0
 
 # -----------
 
